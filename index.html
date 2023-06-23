@@ -3,33 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <title>StudyMate - Portfolio Project</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <img src="./images/logo.svg" alt="StudyMate App Icon" class="app-icon">
-    <h1>StudyMate</h1>
-  </header>
+  <div class="page page-header">
+    <header>
+      <!-- <img src="https://example.com/cover-image.png" alt="Cover Image" class="cover-image"> -->
+	  <img src="./images/logo.svg" alt="StudyMate Logo" class="logo">
+      <h1>StudyMate</h1>
+      <p class="description animated">StudyMate is a user-friendly study app designed to help students stay organized, motivated, and connected in their learning journey. With StudyMate, you can join a supportive community of learners, set and track learning goals, access a library of educational resources, and collaborate with fellow students. Take your learning experience to the next level with StudyMate.</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="https://natedempsey.pythonanywhere.com" class="get-started-btn">Get Started</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
-  <main>
-    <div class="project-info">
-      <h2>About the App</h2>
-      <p>StudyMate is a user-friendly study app designed to help students stay organized, motivated, and connected in their learning journey. With StudyMate, you can join a supportive community of learners, set and track learning goals, access a library of educational resources, and collaborate with fellow students. Take your learning experience to the next level with StudyMate.</p>
-    </div>
-
-    <div class="developer-story">
-      <h2>About the Developer</h2>
-      <p>As a developer, I was determined to create a portfolio project that not only showcases my coding skills but also makes a positive impact. Recognizing the struggles of my peers in staying organized and motivated while learning, I decided to develop StudyMate. My goal was to provide a supportive community for learners, helping them stay on track with their learning goals and enhancing their overall learning experience. Join me on this exciting journey of knowledge and growth with StudyMate.</p>
-    </div>
-  </main>
+  <div class="page">
+    <!-- <section id="features">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature">
+          <img src="./Room_creation.PNG" alt="Feature 1">
+          <img src="./Room_creation0.PNG" alt="Feature 1">
+          <div class="feature-description">
+            <h3>Feature 1</h3>
+            <p>Description of Feature 1</p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="https://example.com/feature2.png" alt="Feature 2">
+          <h3>Feature 2</h3>
+          <p>Description of Feature 2</p>
+        </div>
+        <div class="feature">
+          <img src="https://example.com/feature3.png" alt="Feature 3">
+          <h3>Feature 3</h3>
+          <p>Description of Feature 3</p>
+        </div>
+      </div>
+    </section> -->
+    <section id="features animated">
+      <div class="container">
+        <h2>Key Features</h2>
+        <div class="feature">
+          <div class="feature-description">
+            <h3>Room Creation</h3>
+            <p>Create and Customize Study Rooms</p>
+            <p>Create your own study rooms by filling out a simple form. Specify the room name, topics of study, and provide a brief description. This feature allows you to create personalized study environments and connect with like-minded learners.</p>
+          </div>
+          <div class="image-container">
+            <img src="./images/Room_creation.PNG" alt="Feature 1 Image 1">
+            <img src="./images/Room_creation0.PNG" alt="Feature 1 Image 2">
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-description">
+            <h3>Room Search</h3>
+            <p>Find the perfect Study Room</p>
+            <p>With our advanced search functionality, you can easily discover the ideal study room for your needs. Simply enter relevant keywords or filters in the search bar, such as subject, topic, or room name, and browse through a wide range of study rooms that match your criteria. Enhance your learning experience by connecting with peers in dedicated study environments.</p>
+          </div>
+          <div class="image-container">
+            <img src="./images/Room_search.PNG" alt="Feature 1 Image 1">
+            <!-- <img src="./Room_creation0.PNG" alt="Feature 1 Image 2"> -->
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-description">
+            <h3>Live Chat and Messaging</h3>
+            <p>Connect and Collaborate with Peers</p>
+            <p>Stay engaged and connected with other learners through our live chat and messaging feature. Once you join a study room, you can instantly communicate with fellow students, exchange ideas, ask questions, and collaborate on projects. Enhance your learning experience by actively participating in discussions, sharing resources, and supporting each other's academic journey.</p>
+          </div>
+          <div class="image-container">
+            <img src="./images/messaging.PNG" alt="Feature 1 Image 1">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>StudyMate was inspired by my personal journey as a learner. Throughout my education, I faced challenges in staying organized and motivated. To address this, I created StudyMate as a part of my portfolio project during my time at Holberton School. It aims to provide a user-friendly and supportive platform for students to enhance their learning experience.</p>
+        <p>This project is a Portfolio Project for Holberton School. You can find the source code on <a href="https://github.com/Nathaniel81/StudyMate">GitHub</a>.</p>
+        <div class="team-members">
+          <!-- <h3>Team Members</h3> -->
+          <ul>
+            <li><a href="[LinkedIn Profile URL]">LinkedIn</a></li>
+            <li><a href="https://github.com/Nathaniel81/StudyMate">GitHub</a></li>
+            <li><a href="[Twitter Profile URL]">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <footer>
-    <p>
-      <a href="https://natedempsey.pythonanywhere.com/" class="app-link">Visit the App</a>
-      <a href="https://github.com/Nathaniel81/StudyMate/" class="github-link">GitHub</a>
-    </p>
+    <div class="container">
+      <p>
+        <a href="https://natedempsey.pythonanywhere.com" class="app-link">Visit the App</a>
+        <a href="https://github.com/Nathaniel81/StudyMate" class="github-link">GitHub</a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
-
-

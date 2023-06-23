@@ -1,154 +1,281 @@
-
-/* style.css */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
+
 * {
-  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-rendering: optimizeLegibility;
-  font-size: inherit;
-}
-
-html {
-  font-size: 56.25%;
-}
-
-@media only screen and (min-width: 1200px) {
+	font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: inherit;
+  }
   html {
-    font-size: 62.5%;
+	font-size: 56.25%;
   }
-}
-
-@media only screen and (min-width: 2100px) {
-  html {
-    font-size: 75%;
+  
+  body {
+	line-height: 1.6;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #b2bdbd;
+	background-color: #2d2d39;
+	min-height: 100vh;
   }
-}
-
-body {
-  line-height: 1.6;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: #b2bdbd;
-  min-height: 100vh;
-  background-color: #2d2d39;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #3f4156;
-  padding: 20px;
-}
-
-/* Rest of the CSS code... */
-
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #2d2d39;
-}
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #3f4156;
-  padding: 20px;
-}
-
-.app-icon {
-  width: 80px;
-  height: 80px;
-}
-
-h1 {
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-main {
-  text-align: center;
-  margin-top: 50px;
-}
-
-p {
-  font-size: 18px;
-  /* color: #666; */
-  color: #929b9b;
-  margin-bottom: 20px;
-}
-
-.get-started-btn {
-  display: inline-block;
-  /* background-color: #007BFF; */
-  background-color:#71c6dd;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-footer {
-  background-color: #3f4156; /* Update footer background color */
-  padding: 30px 0;
-  text-align: center;
-}
-
-
-.project-info,
-.developer-story,
-.cta-section {
-  margin-bottom: 40px;
-  padding: 0 20px;
-}
-
-.project-info h2,
-.developer-story h2,
-.cta-section h2 {
-  font-size: 24px;
-  color: #bbb;
-  margin-bottom: 10px;
-}
-
-.app-link,
-.github-link {
-  display: inline-block;
-  background-color: #007BFF;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  h1 {
-    font-size: 24px;
+  
+  .container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
   }
-
+  
+  h1, h2, h3 {
+	margin-bottom: 10px;
+  }
+  
   p {
-    font-size: 16px;
+	margin-bottom: 20px;
+  }
+  
+  a {
+	color: #71c6dd;
+	text-decoration: none;
+  }
+  
+  /* Header Styles */
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .animated {
+	animation: fadeIn 1s ease-out;
+  }
+  
+  header {
+	position: relative;
+	text-align: center;
+	margin-bottom: 40px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(./images/bg3.jpg);
+	background-size: cover;
+	/* color: #FFF; */
+	color: #71c6dd;
+	padding: 0 20px;
   }
 
-  .get-started-btn,
-  .app-link,
-  .github-link {
-    font-size: 14px;
-    padding: 8px 16px;
+  header h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
   }
+  header .description {
+	font-size: 1.6rem;
+	margin-bottom: 20px;
+	padding: 0 76px;
+	color: #bbb;
+  }
+  
+  .logo {
+	width: 100px; /* Adjust the width according to your logo size */
+	height: auto;
+	margin-bottom: 10px;
+  }
+  
+  header .cover-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+  }
+  
+  header h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+  }
+  
+  header p {
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+  }
+
+  nav {
+	position: absolute;
+	top: 60px;
+	right: 25px;
+  }
+  
+  nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  nav ul li {
+	margin-right: 10px;
+	padding-left: 20px;
+  }
+  
+  nav ul li a {
+	font-size: 1.5rem;
+	margin-left: 10px;
+	transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+	color: white;
+  }
+  
+
+  .get-started-btn {
+	display: inline-block;
+    background-color: #71c6dd;
+    color: #3f4156;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+
+  .get-started-btn:hover {
+	color: #3f4156;
+	transform: scale(1.1); /* Apply scale transformation on hover */
+  }
+  
+  .get-started-box {
+	display: inline-block;
+	background-color: #F2F2F2;
+	padding: 10px;
+	border-radius: 5px;
+	text-align: right;
+  }
+  .get-started-box .get-started-btn {
+	margin: 0;
+  }
+  
+  /* Feature Section Styles */
+  /* Feature Section Styles */
+  @keyframes slideIn {
+	from {
+	  opacity: 0;
+	  transform: translateX(-20px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  .feature.animated {
+	animation: slideIn 1s ease-out;
+  }
+  
+  #features {
+	text-align: center;
+	margin-bottom: 40px;
+	padding-top: 40px;
+	/* padding-bottom: 40px; */
+	background-color: #3f4156;
+  }
+
+  #features h2 {
+	margin-bottom: 37px;
+	font-size: larger;
 }
 
+  
+  .feature {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 40px;
+	/* outline: auto; */
+  }
+  
+  .feature .image-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+  }
+  
+  .feature .image-container img {
+	width: 100%;
+	max-height: 280px; /* Adjust the height as per your preference */
+	object-fit: cover;
+	margin-bottom: 10px;
+  }
+  
+  .feature-description {
+	flex: 1;
+	text-align: left;
+  }
+  
+  .feature-description h3 {
+	margin-bottom: 10px;
+  }
+  
+  .feature-description p {
+	margin-bottom: 0;
+  }
+	
+  
+  
+  /* About Section Styles */
+  #about {
+	margin-bottom: 40px;
+	background-color: #3f4156;
+	padding-top: 40px;
+	padding-bottom: 20px;
+  }
 
+  #about a:hover {
+	color: #ddd;
+	/* text-decoration: underline; */
+  }  
+  
+  
+  .team-members {
+	margin-top: 20px;
+  }
+  
+  .team-members ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .team-members ul li {
+	margin-right: 10px;
+  }
+  
+  /* Footer Styles */
+  footer {
+	text-align: center;
+	background-color: #3f4156;
+	padding: 20px 0;
+  }
+  
+  .app-link, .github-link {
+	display: inline-block;
+	background-color: #71c6dd;
+	color: #3f4156;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 10px;
+  }
+
+footer .app-link:hover,
+footer .github-link:hover {
+  background-color: #ccc;
+  color: #3f4156;
+}
